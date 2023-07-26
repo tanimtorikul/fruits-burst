@@ -41,6 +41,7 @@
     <header class="container mx-auto">
         <!-- navbar -->
         <div class="navbar lg:bg-primary  lg:rounded-[600px] mt-12">
+
             <div class="navbar-start  hidden md:block">
                 <ul class="menu menu-horizontal px-1 text-white text-lg font-semibold">
                     <li><a>Home</a></li>
@@ -61,19 +62,18 @@
                     <div>
                         <input type="text" class="bg-transparent outline-none placeholder-gray-600"
                             placeholder="Search Here">
-                        <i class="fa-solid fa-magnifying-glass"></i> 
-                        <button class="sm:hidden md:visible text-white">
-                            <i class="fa-solid fa-bars"></i>
-                          </button>
+                        <i class="fa-solid fa-magnifying-glass"></i>
                     </div>
-                   
-
 
                 </div>
-
-
+                <!-- Bars icon for small screens -->
+                <div class="lg:hidden px-4 py-3 cursor-pointer">
+                    <i class="fa-solid fa-bars text-xl"></i>
+                </div>
             </div>
         </div>
+
+
         <!-- banner section -->
         <div class="carousel rounded-lg relative z-10 w-full min-h-[600px] sm:h-[50px] mt-16">
             <!-- slide 1 -->
