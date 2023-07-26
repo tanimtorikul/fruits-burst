@@ -40,7 +40,7 @@
     <!-- header -->
     <header class="container mx-auto">
         <!-- navbar -->
-        <div class="navbar bg-primary sm:bg-[hidden] lg:rounded-[600px] mt-12">
+        <div class="navbar lg:bg-primary  lg:rounded-[600px] mt-12">
             <div class="navbar-start  hidden md:block">
                 <ul class="menu menu-horizontal px-1 text-white text-lg font-semibold">
                     <li><a>Home</a></li>
@@ -50,19 +50,23 @@
                 </ul>
             </div>
             <div class="navbar-center">
-                <div class="flex items-center gap-4">
+                <div class="flex items-center gap-4 ">
                     <img src="images/logo.png" alt="">
-                    <h2 class="text-4xl text-white font-bold">Fruit Burst</h2>
+                    <h2 class="text-xl md:text-4xl lg:text-white sm:text-black font-bold">Fruit Burst</h2>
                 </div>
             </div>
-            <div class="navbar-end ">
-                <div class="rounded-full bg-white flex flex-col items-center py-4 px-7">
+            <div class="navbar-end  ">
+                <div class="rounded-full hidden lg:block  bg-white flex flex-col items-center py-4 px-7">
 
-                    <div class="hidden lg:block md:block">
+                    <div>
                         <input type="text" class="bg-transparent outline-none placeholder-gray-600"
                             placeholder="Search Here">
-                        <i class="fa-solid fa-magnifying-glass"></i>
+                        <i class="fa-solid fa-magnifying-glass"></i> 
+                        <button class="sm:hidden md:visible text-white">
+                            <i class="fa-solid fa-bars"></i>
+                          </button>
                     </div>
+                   
 
 
                 </div>
@@ -71,7 +75,7 @@
             </div>
         </div>
         <!-- banner section -->
-        <div class="carousel relative z-10 w-full min-h-[600px] sm:h-[50px] mt-16">
+        <div class="carousel rounded-lg relative z-10 w-full min-h-[600px] sm:h-[50px] mt-16">
             <!-- slide 1 -->
             <div id="slide1" class="carousel-item relative w-full rounded-lg">
                 <div class="hero" style="background-image: url('images/banner1.png')">
